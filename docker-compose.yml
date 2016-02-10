@@ -1,0 +1,20 @@
+question2answer:
+    image: q2a
+    ports:
+      - "8080:8080"
+      - "80:80"
+    links:
+        - db:mysql
+    environment:
+        QUESTION2ANSWER_DB_USER: question2answer_user
+        QUESTION2ANSWER_DB_PASSWORD: 123456
+        QUESTION2ANSWER_DB_NAME: question2answer
+
+
+db:
+    image: mariadb
+    environment:
+        MYSQL_USER: question2answer_user
+        MYSQL_PASSWORD: 123456
+        MYSQL_DATABASE: question2answer
+        MYSQL_ROOT_PASSWORD: bmcAdm1n
