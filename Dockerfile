@@ -59,10 +59,12 @@ RUN q2a-install-plugin \
 	KrzysztofKielce/q2a-backup \
 	amiyasahu/q2a-delete-hidden-posts \
 	q2apro/q2apro-list-uploads-page \
-	kfuchs/permission2categories \
 	NoahY/q2a-post-merge \
 	heartsmile/search-in-setting-plugin \
 	svivian/q2a-tagging-tools
+
+# NOT WORKING
+# kfuchs/permission2categories
 
 ## Install Plugins
 RUN q2a-install-plugin \
