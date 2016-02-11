@@ -31,9 +31,14 @@ RUN mv /var/www/html/qa-plugin/q2a-slack/q2a-slack /var/www/html/qa-plugin/q2a-s
 RUN rm -fr /var/www/html/qa-plugin/q2a-slack
 RUN mv /var/www/html/qa-plugin/q2a-slack_tmp /var/www/html/qa-plugin/q2a-slack
 
+# Email formatter
+RUN q2a-install-plugin \
+	ruuttt/q2a-email-formating
+
+RUN mv /var/www/html/qa-plugin/q2a-email-formating /var/www/html/qa-plugin/email-formating
+
 # More plugins
 RUN q2a-install-plugin \
-	amiyasahu/q2a-express-editor \
 	svivian/q2a-markdown-editor \
 	q2apro/q2apro-prevent-simultaneous-edits \
 	NoahY/q2a-smilies \
@@ -48,13 +53,13 @@ RUN q2a-install-plugin \
 	q2apro/q2apro-warn-on-leave \
 	NoahY/q2a-role-markers \
 	amiyasahu/q2a-sort-answers \
-	ruuttt/q2a-email-formating \
 	NoahY/q2a-cat \
 	q2apro/q2apro-comment-to-answer \
 	KrzysztofKielce/q2a-backup \
 	amiyasahu/q2a-delete-hidden-posts \
 	q2apro/q2apro-list-uploads-page \
 	NoahY/q2a-post-merge \
+	amiyasahu/q2a-email-notification \
 	svivian/q2a-tagging-tools
 
 # TBD
@@ -75,7 +80,7 @@ RUN q2a-install-plugin \
 # NoahY/q2a-bookmarks
 # heartsmile/search-in-setting-plugin
 # zakkak/q2a-email-notifications-revised
-# amiyasahu/q2a-email-notification
+# 	amiyasahu/q2a-express-editor
 
 ## Install Plugins
 RUN q2a-install-plugin \
