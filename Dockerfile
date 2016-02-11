@@ -59,8 +59,7 @@ RUN q2a-install-plugin \
 	amiyasahu/q2a-delete-hidden-posts \
 	q2apro/q2apro-list-uploads-page \
 	NoahY/q2a-post-merge \
-	amiyasahu/q2a-email-notification \
-	svivian/q2a-tagging-tools
+	amiyasahu/q2a-email-notification
 
 # TBD
 # 	Towhidn/Q2A-Tab-Widget \
@@ -81,6 +80,7 @@ RUN q2a-install-plugin \
 # heartsmile/search-in-setting-plugin
 # zakkak/q2a-email-notifications-revised
 # 	amiyasahu/q2a-express-editor
+# 	svivian/q2a-tagging-tools
 
 ## Install Plugins
 RUN q2a-install-plugin \
