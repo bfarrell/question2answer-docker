@@ -60,7 +60,7 @@ Simply place the q2a-slack folder into the qa-plugin folder, then change the
 
 ```php
     private $siteUrl = 'http://clm-aus-012171/';
-    private $slackUrl = 'https://hooks.slack.com/services/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';
+    private $slackUrl = 'https://hooks.slack.com/services/zzzzzzz/zzzzzzzz/zzzzzzzzzzzzz';
     private $linkMessage = 'View on Q2A Site';
 ```
 
