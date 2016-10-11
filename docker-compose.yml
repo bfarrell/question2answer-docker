@@ -18,3 +18,5 @@ db:
         MYSQL_PASSWORD: 123456
         MYSQL_DATABASE: question2answer
         MYSQL_ROOT_PASSWORD: bmcAdm1n
+    volumes:
+      - /opt/q2a/db:/var/lib/mysql
